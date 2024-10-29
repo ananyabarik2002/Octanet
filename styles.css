@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #3b2a22;
+    color: #f0e3d7;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menuitem, .btn {
+    margin: 0.5rem;
+}
+
+.menuitem a, .btn button {
+    color: #f0e3d7;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.menuitem a:hover, .btn button:hover {
+    color: #d9a061;
+    transform: scale(1.1);
+}
+
+.btn button {
+    background-color: #d9a061;
+    color: #3b2a22;
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn button:hover {
+    background-color: #c58e4c;
+    transform: scale(1.05);
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    text-align: left;
+}
+
+.info h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.img {
+    margin-top: 1rem;
+    max-width: 50%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.img img:hover {
+    transform: scale(1.05);
+}
+
+.msg {
+    margin-top: 2rem;
+    padding: 2rem;
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+.menu {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.menu-item {
+    margin: 1rem 0;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.testimonials {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .info h1 {
+        font-size: 2rem;
+    }
+
+    .msg {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .img {
+        margin: 1rem 0;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .info h1 {
+        font-size: 1.5rem;
+    }
+
+    .msg {
+        font-size: 0.875rem;
+    }
+}
